@@ -1,6 +1,5 @@
 /** @jsxImportSource @emotion/react */
 import * as S from "./style";
-import logo512 from "./logo512.png";
 import { useRef, useState } from "react";
 
 function Mypage() {
