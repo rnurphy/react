@@ -68,8 +68,7 @@ function ImageEx2() {
             fileReader.readAsDataURL(file.originFile);
         }));
 
-        Promise.all(promises)
-        .then(result => {
+        Promise.all(promises).then(result => {
             setNewFiles(result.map((dataUrl, index) => {
                 return {
                     ...uploadFiles[index],
