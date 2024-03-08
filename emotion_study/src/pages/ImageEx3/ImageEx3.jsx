@@ -39,6 +39,7 @@ function ImageEx3() {
  * }
  */
     const handleFileChange = (e) => {
+        console.log(e.target.files);    // -> FileList 객체
         const { files } = e.target;
         const fileArray = Array.from(files);
 
@@ -52,7 +53,7 @@ function ImageEx3() {
         let promises = [];
 
         promises = fileArray.map(file => new Promise(resolve => {
-            // console.log(file.name);
+            
             const loadImage = {
                 id: imageIdRef.current += 1,
                 file,
