@@ -6,6 +6,8 @@ import RootHeader from "./components/RootHeader/RootHeader";
 import RootLayout from "./components/RootLayout/RootLayout";
 import RoodSideMenuLeft from "./components/RootSideMenuLeft/RoodSideMenuLeft";
 import AuthPage from "./pages/AuthPage/AuthPage";
+import HomePage from "./pages/HomePage/HomePage";
+import AuthRoute from "./Routes/AuthRoute";
 
 function App() {
   return ( 
@@ -13,9 +15,7 @@ function App() {
       <RootContainer>
         <RoodSideMenuLeft />
         <RootHeader />
-        <Routes>
-          <Route path="/auth/*" element={ <AuthPage /> } />
-        </Routes>
+        <AuthRoute />
 
 
       </RootContainer>
