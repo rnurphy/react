@@ -2,6 +2,8 @@ import { css } from "@emotion/react";
 
 export const container = css`
     position: relative;
+    display: flex;
+    flex-direction: column;
     
     box-sizing: border-box;
     border-radius: 20px;

@@ -13,8 +13,7 @@ function App() {
   return ( 
     <RootLayout>
       <RootContainer>
-        <RoodSideMenuLeft />
-        <RootHeader />
+
         <AuthRoute />
 
 

@@ -18,7 +18,7 @@ function SigninPage() {
         }).then(response => {
             const accessToken = response.data;
             localStorage.setItem("AccessToken", accessToken);
-            window.location.replace("/");
+            window.location.replace("/");   // 전체 리렌더링
         }).catch(error => {
             alert(error.response.data);
         }) 
