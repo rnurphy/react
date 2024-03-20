@@ -8,7 +8,7 @@ export const layout = css`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000%;
+    width: 100%;
     height: 100%;
     background-color: #fafafa33;
 `;

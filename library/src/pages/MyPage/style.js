@@ -49,6 +49,17 @@ export const infoBox = css`
     padding-top: 30px;
 `;
 
+export const infoButtons = css`
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 5px;
+
+    & > button:nth-of-type(1) {
+        margin-right: 10px;
+    }
+
+`;
+
 export const bottom = css`
     box-sizing: border-box;
     display: flex;
@@ -71,10 +82,9 @@ export const emailBox = css`
     display: flex;
     align-items: center;   
     margin-bottom: 10px;
-
     
-    & > div {
-        margin: 0;
+    & > div:nth-of-type(1) {
+        margin: 0px 10px 0px 0px;
     }
 `;
 
@@ -85,7 +95,6 @@ export const infoButton = css`
     border-radius: 3px;
     background-color: white;
     font-size: 12px;
-    margin-left: 10px;
     cursor: pointer;
 
     &:hover {
@@ -96,3 +105,13 @@ export const infoButton = css`
         background-color: #eeeeee;
     }
 `;
+
+export const emailCheck = css`
+    display: flex;
+    align-items: center;
+
+    & > * {
+        color: #199449;
+    }
+`;
+
