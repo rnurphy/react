@@ -12,6 +12,7 @@ import { GridLoader } from 'react-spinners';
 import FullSizeLoader from '../components/FullSizeLoader/FullSizeLoader';
 import MyPage from '../pages/MyPage/MyPage';
 import PageContainer from '../components/PageContainer/PageContainer';
+import PasswordEditPage from '../pages/PasswordEditPage/PasswordEditPage';
 
 /* 
 useQuery => GET 요청시 사용, 포커스 감지
@@ -52,9 +53,10 @@ function AuthRoute(props) {
                     principalQuery.isLoading
                     ? <FullSizeLoader size={20}/>
                     : <Routes>
-                        <Route path="/auth/*" element={ <AuthPage /> } />
+                        <Route path="/auth/*" element={ <AuthPage /> }/>
                         <Route path="/" element={ <HomePage /> }/>
                         <Route path="/account/mypage" element={ <MyPage /> }/>
+                        <Route path="/account/edit/password" element={ <PasswordEditPage /> }/>
                     </Routes>
                 }
             </PageContainer>

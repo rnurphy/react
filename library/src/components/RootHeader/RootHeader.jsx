@@ -35,6 +35,7 @@ function RootHeader() {
             return config;
         })
         queryClient.refetchQueries("principalQuery");   // 상태가 그대로라면 리렌더링 하지 않을 것
+        window.location.replace("/auth/signin");
     }
 
     return (
