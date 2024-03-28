@@ -13,6 +13,7 @@ import FullSizeLoader from '../components/FullSizeLoader/FullSizeLoader';
 import MyPage from '../pages/MyPage/MyPage';
 import PageContainer from '../components/PageContainer/PageContainer';
 import PasswordEditPage from '../pages/PasswordEditPage/PasswordEditPage';
+import BookManagement from '../pages/Admin/BookManagement/BookManagement';
 
 /* 
 useQuery => GET 요청시 사용, 포커스 감지
@@ -36,11 +37,11 @@ function AuthRoute(props) {
         refetchOnWindowFocus: false,
         onSuccess: response => {
             console.log("principalQuery: onSuccess");
-            console.log(response);
+            // console.log(response);
         },
         onError: error => {
             console.log("principalQuery: 실패");
-            console.log(error);
+            // console.log(error);
         }
     });
     
@@ -57,6 +58,7 @@ function AuthRoute(props) {
                         <Route path="/" element={ <HomePage /> }/>
                         <Route path="/account/mypage" element={ <MyPage /> }/>
                         <Route path="/account/edit/password" element={ <PasswordEditPage /> }/>
+                        <Route path="/admin/book/management" element={ <BookManagement /> }/>
                     </Routes>
                 }
             </PageContainer>
